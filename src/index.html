@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jane Doe Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Avatar"
+          class="avatar"
+        />
+        <div class="header-text">
+          <h1 id="name" class="fade">Jane Doe</h1>
+          <p id="header-description" class="fade">
+            Computer Science Student | Germany
+          </p>
+        </div>
+      </div>
+      <div class="language-switcher">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('de')">Deutsch</button>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#about" onclick="scrollToSection('about')" id="about"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#skills" onclick="scrollToSection('skills')" id="skills"
+            >Skills</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            onclick="scrollToSection('projects')"
+            id="projects"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="#contact" onclick="scrollToSection('contact')" id="contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about" class="section fade">
+        <h2 id="about-title">About Me</h2>
+        <p id="about-description">
+          I am a computer science student currently studying in Germany. I was
+          born in Rwanda and have a passion for technology, coding, and
+          problem-solving.
+        </p>
+      </section>
+
+      <section id="skills" class="section fade">
+        <h2 id="skills-title">Skills</h2>
+        <ul>
+          <li id="skill1">Programming (Java, Python, JavaScript)</li>
+          <li id="skill2">Web Development (HTML, CSS, React)</li>
+          <li id="skill3">Database Management (SQL, MongoDB)</li>
+          <li id="skill4">Machine Learning</li>
+          <li id="skill5">Problem Solving</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section fade">
+        <h2 id="projects-title">Projects</h2>
+        <div class="project">
+          <h3 id="project1-title">Portfolio Website</h3>
+          <p id="project1-description">
+            A personal portfolio website to showcase my skills and projects.
+          </p>
+        </div>
+        <div class="project">
+          <h3 id="project2-title">Weather App</h3>
+          <p id="project2-description">
+            A simple weather application using open weather APIs to display
+            current weather data.
+          </p>
+        </div>
+        <div class="project">
+          <h3 id="project3-title">E-commerce Platform</h3>
+          <p id="project3-description">
+            An online store built with React and Firebase to showcase e-commerce
+            functionality.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section fade">
+        <h2 id="contact-title">Contact Me</h2>
+        <p id="contact-description">
+          If you'd like to get in touch, feel free to send me a message via
+          email.
+        </p>
+        <button id="contact-button">Send Email</button>
+      </section>
+    </main>
+
+    <footer>
+      <p id="footer-text">© 2024 Jane Doe. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
